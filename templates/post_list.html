@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post list</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Post List</h2>
+        <ul>
+            {% for post in posts %}
+                <li>
+                    <h1>{{ post.title }}</h1>
+                    <h2>{{ post.content }}</h2>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>
